@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    margin: 0;
 }
 body{
     background-image: url(bg-intro-desktop.png);
@@ -9,60 +10,87 @@ body{
     font-size: 16px;
     height: 100vh;
 }
-@media screen and (max-width: 375px){
-    #form{
-        display: flex;
-        flex-direction: column;
+@media screen and (min-width: 376px){
+   body{
+        margin-top: 80px;
+    }
+   #container{
+        padding: 0 50px;
+        width: 90%;
+        margin: auto;
+    } 
+    #box1{
+        margin: 0 10px;
+        padding: 10px 0;
+        flex: 20%;
         width: 100%;
+    }
+    #box1 h1{
+        font-size: 35px;
+    }
+    #box2{
+        flex: 30%;
+        margin: 0 30px;
+        padding: 15px;
+        height: 100%;
+    }
+    #form{
+        margin: 20px 0;
+    }
+}
+@media screen and (max-width: 375px){
+    body{
+        box-sizing: content-box;
+        margin: 0;
+        padding: 0;
     }
     #box1{
         flex: 100%;
-        border: 1px solid black;
-        margin: 0px;
+        padding: 20px;
+        text-align: center;
+        margin-top: 50px;
+    }
+    #box1 h1{
+        font-size: 20px;
+        padding: 10px;
     }
     #box2{
         flex: 100%;
-        border: 1px solid black;
+        margin: 0;
+        padding: 0 20px;
+    }
+    .blue-box{
+        margin: 0;
+        padding: 0;
     }
     #container{
         display: flex;
         flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        width: 100%;
     }
+    #form{
+        margin: 0;
+        padding: 0; 
+        margin-bottom: 50px;
+    }
+
 }
-#link{
-    text-decoration: none;
-    color: rgb(255, 160, 150);
-}
+
 #container{
-    width: 80%;
     height: 500px;
-    margin: auto;
-    /* border: 1px solid black; */
-    margin-top: 80px;
-    padding: 15px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 } 
-#box1{
-    /* border: 1px solid black; */
-    margin: 20px;
-    padding: 20px;
-    flex: 40%;
-}
 #box1 p{
     font-size: 12px;
 }
-#box2{
-    flex: 50%;
-    /* border: 1px solid black; */
-    margin: 20px;
-    padding: 15px;
-    height: 100%;
-}
 .blue-box{
-    /* border: 1px solid black; */
-    margin: 20px 10px;
+    width: 100%;
+    margin: 20px 0;
     padding: 10px;
     box-sizing: border-box;
     text-align: center;
@@ -75,21 +103,31 @@ body{
     background-color: white;
     height: 385px; 
     padding: 20px;
-    margin: 10px;
+    padding-right: 30px;
     border-radius: 5px;
     width: 100%;
 }
+#link{
+    text-decoration: none;
+    color: rgb(255, 160, 150);
+}
 .cell{
     width: 100%;
-    margin: 5px;
+    margin: 10px;
     padding: 10px;
-    /* size: 25; */
+    border: 1px solid rgb(224, 217, 217);
+    border-radius: 5px;
 }
 .little-text{
     color: rgb(130,130,150);
     font-size: 12px;
+    margin-top: 10px;
+    text-align: center;
 }
 button{
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
     background-color: hsl(154, 59%, 51%);
     border: 2px solid hsl(154, 59%, 51%);
     border-radius: 5px;

@@ -20,10 +20,10 @@
         </div>
     <form id="form" action=" ">
         <input type="text" name="First Name" required class="cell" placeholder="First Name">
-        <input type="text" name="Last Name" class="cell" placeholder="Last Name">         
-        <input type="email" name="Email Address" class="cell" placeholder="Email Address">
-        <input type="password" name="password" class="cell" placeholder="Password">       
-        <button  class="cell"style="color:white">CLAIM YOUR FREE TRIAL</button>           
+        <input type="text" name="Last Name" required class="cell" placeholder="Last Name">         
+        <input type="email" name="Email Address" required class="cell" placeholder="Email Address">
+        <input type="password" name="password" class="cell" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>       
+        <button style="color:white">CLAIM YOUR FREE TRIAL</button>           
         <p class="little-text">By clicking the button, you are agreeing to our <a href="#" id="link"><strong> Terms and Services</strong></a></p>
     </form>
     </div>
